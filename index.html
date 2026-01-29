@@ -1,0 +1,166 @@
+<html lang="vi"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tải Ứng Dụng</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Tahoma, sans-serif;
+            background: linear-gradient(135deg, #e9eef3, #f7f9fb);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            padding: 20px 40px;
+        }
+
+        header img {
+            height: 48px;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            max-width: 900px;
+            width: 100%;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.65);
+            backdrop-filter: blur(14px);
+            border-radius: 16px;
+            padding: 35px;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+            border: 1px solid rgba(255,255,255,0.6);
+        }
+
+        .card h2 {
+            margin-top: 0;
+            color: #222;
+        }
+
+        .card p {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .btn {
+            margin: 18px 0;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 14px 30px;
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 10px;
+        }
+
+        .android { background: linear-gradient(135deg, #3ddc84, #2bb673); }
+        .java { background: linear-gradient(135deg, #f89820, #e76f00); }
+
+        /* Khung ghi chú nhỏ */
+        details {
+            margin-top: 15px;
+            text-align: left;
+        }
+
+        summary {
+            cursor: pointer;
+            font-weight: 600;
+            color: #333;
+            list-style: none;
+        }
+
+        summary::marker { display: none; }
+
+        summary::before { content: "📝 "; }
+
+        .note-box {
+            margin-top: 10px;
+            padding: 14px;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(0,0,0,0.05);
+            font-size: 14px;
+            color: #444;
+            line-height: 1.6;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="logo.png" alt="Logo">
+</header>
+
+<main>
+    <div class="cards">
+
+        <!-- Android -->
+        <div class="card">
+            <h2>Android</h2>
+            <p>Phiên bản mới nhất<br>Apk V247</p>
+
+            <a href="https://www.mediafire.com/file/1o3mbwo10eit53q/ModNrov247p1.apk/file" class="btn android" download="">
+                📱 Tải Android
+            </a>
+
+            <details open="">
+                <summary>Ghi chú</summary>
+                <div class="note-box">
+                    • Chức năng: Button bên phải màn hình.<br>
+                    • Úp skh,cold cần cs ít nhất 30 ngọc để nó chạy đi mua tdlt.<br>
+                  
+                </div>
+            </details>
+        </div>
+
+        <!-- Java -->
+        <div class="card">
+            <h2>Java</h2>
+            <p>Phiên bản mới nhất<br>Java V237</p>
+
+            <a href="nrmod.jar" class="btn java" download="">
+                ☕ Tải Java
+            </a>
+
+            <details open="">
+                <summary>Ghi chú</summary>
+                <div class="note-box">
+                    • Lệnh ở trong bản phần chức năng : Tìm phần thông báo ấn vô lệnh chat 
+                </div>
+            </details>
+        </div>
+
+    </div>
+</main>
+
+<footer>
+    © 2026 CuibapVH
+</footer>
+
+
+
+</body></html>
